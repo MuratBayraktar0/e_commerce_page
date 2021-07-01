@@ -1,0 +1,12 @@
+body {
+  margin: 0rem;
+}
+.header {
+  background-color: darkcyan;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
