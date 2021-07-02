@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/bag.css";
+import "../../style/header.css";
 import { RiShoppingBasketLine } from "react-icons/ri";
 
 function Bag(props) {
@@ -9,7 +9,7 @@ function Bag(props) {
       <div className="productCount">
         <span>{productCount}</span>
       </div>
-      <RiShoppingBasketLine size="40px" color="white" />
+      <RiShoppingBasketLine size="40px" color="rgb(28, 55, 114)" />
     </div>
   );
 }

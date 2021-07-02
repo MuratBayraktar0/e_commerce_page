@@ -1,6 +1,5 @@
-import Bag from "./Bag";
-import Product from "./Product";
 import ProductList from "./ProductList";
 import Header from "./Header";
+import Menu from "./Menu";
 
-export { Bag, Product, ProductList, Header };
+export { ProductList, Header, Menu };

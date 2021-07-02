@@ -1,42 +1,71 @@
 .product {
-  width: 350px;
-  height: 450px;
-  background-color: cadetblue;
+  width: 200px;
+  height: 320px;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .productImage {
-  margin-top: 25px;
-  border-radius: 3px;
+  transition: 300ms all;
+}
+
+.product:hover .productImage {
+  transform: scale(1.07);
+}
+
+.productName {
+  margin-top: 10px;
+}
+.productName span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #646464;
+}
+
+.productPrice {
+  margin-top: 10px;
+}
+
+.productPrice span {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
 .buttons {
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
+  width: 200px;
+  margin-top: 10px;
 }
 
 .buttons button {
   height: 30px;
-  width: 90px;
-  background-color: black;
+  width: 150px;
   border-style: none;
   color: white;
   font-weight: 900;
   border-radius: 3px;
   transition: all 300ms;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .buttons button:hover {
-  transform: scale(1.1, 1.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .productList {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   width: fit-content;
   margin: auto;
+  margin-top: 135px;
+}
+
+.pagination {
+  width: fit-content;
+  margin: 20px auto;
 }

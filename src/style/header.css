@@ -1,12 +1,96 @@
 body {
   margin: 0rem;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 .header {
-  background-color: darkcyan;
+  background-color: white;
   height: 60px;
-  margin-bottom: 20px;
-  padding: 10px;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  align-items: center;
+}
+
+.productCount {
+  background-color: rgb(218, 72, 72);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+span {
+  font-size: 10px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.bag {
+  position: relative;
+  height: 40px;
+}
+
+.searchBar {
+  width: 100%;
+  height: 30px;
+  max-width: 700px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.searchBar input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 10px;
+  padding: 0;
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+}
+
+.searchButton {
+  background-color: rgb(28, 55, 114);
+  color: #fff;
+  height: 100%;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
